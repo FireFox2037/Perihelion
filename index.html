@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perihelion — Notes on physics, mathematics & computation</title>
+<meta name="description" content="Research notes and articles on astrophysics, mathematics, and computer science.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="sky"></canvas>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#home" class="wordmark" data-link data-page="home">Perihelion</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="#home" data-link data-page="home">Home</a>
+    <a href="#research" data-link data-page="research">Research</a>
+    <a href="#writing" data-link data-page="writing">Writing</a>
+    <a href="#about" data-link data-page="about">About</a>
+    <a href="#contact" data-link data-page="contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HOME -->
+  <section class="page" id="page-home" data-page="home">
+    <div class="hero">
+      <p class="hero-eyebrow">A working notebook in physics, mathematics & computer science</p>
+      <h1 class="hero-title">Understanding the universe,<br>one equation at a time.</h1>
+      <p class="hero-sub">I'm <span class="editable" data-hint="Your name">Your Name</span> — I write about orbital dynamics, stellar structure, and the mathematics that ties them together, alongside notes on the algorithms I build to study them.</p>
+      <div class="hero-actions">
+        <a href="#writing" data-link data-page="writing" class="btn btn-primary">Read the latest writing</a>
+        <a href="#research" data-link data-page="research" class="btn btn-ghost">See current research</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="page" id="page-research" data-page="research">
+    <div class="page-inner">
+      <p class="page-kicker">Research</p>
+      <h2 class="page-title">What I'm currently working on</h2>
+      <p class="page-lede">Ongoing projects and questions I keep returning to. Most are early-stage — get in touch if any overlap with what you're working on.</p>
+
+      <ul class="research-list" id="research-list"><!-- populated by app.js from content.js --></ul>
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section class="page" id="page-writing" data-page="writing">
+    <div class="page-inner">
+      <p class="page-kicker">Writing</p>
+      <h2 class="page-title">Articles & research notes</h2>
+      <p class="page-lede">Long-form pieces on the physics and mathematics I'm studying, and the odd note on computation along the way.</p>
+
+      <div class="article-filters" id="article-filters"><!-- populated by app.js --></div>
+      <ul class="article-list" id="article-list"><!-- populated by app.js from content.js --></ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="page" id="page-about" data-page="about">
+    <div class="page-inner page-inner-narrow">
+      <p class="page-kicker">About</p>
+      <h2 class="page-title">A little about me</h2>
+      <div class="about-body" id="about-body"><!-- populated by app.js from content.js --></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="page" id="page-contact" data-page="contact">
+    <div class="page-inner page-inner-narrow">
+      <p class="page-kicker">Contact</p>
+      <h2 class="page-title">Get in touch</h2>
+      <p class="page-lede">Happy to talk about any of the above, point you to sources, or hear where I've gone wrong.</p>
+      <ul class="contact-list" id="contact-list"><!-- populated by app.js from content.js --></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p><span class="editable" data-hint="Your name">Your Name</span> · built from first principles, no framework required.</p>
+</footer>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
